@@ -1,0 +1,7 @@
+# GNS3 caches and large files
+*.img
+*.qcow2
+*.iso
+project-files/qemu/*
+project-files/docker/*
+__pycache__/
