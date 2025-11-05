@@ -30,5 +30,5 @@ For setting up GNS3 and its dependencies, refer to the following guide:
 ---
 
 ### ⚠️ NOTE
-- All configurations were created and tested in **GNS3 v2.x**.  
+- All configurations were created and tested in **GNS3 v2.2**.  
 - This repository is maintained for **academic and self-learning purposes** only.
