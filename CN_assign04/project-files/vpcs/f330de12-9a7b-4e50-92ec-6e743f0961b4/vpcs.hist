@@ -1,0 +1,9 @@
+ip
+cls
+clear
+ip 192.168.1.1/24 192.168.1.100
+ip dns 192.168.1.100
+show ip
+exit
+?
+quit
