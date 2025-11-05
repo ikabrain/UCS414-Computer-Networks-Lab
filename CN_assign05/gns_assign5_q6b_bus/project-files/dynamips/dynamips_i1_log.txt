@@ -1,0 +1,18 @@
+Sep 06 16:43:11.223 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 06 16:43:11.224 HYPERVISOR: Started on TCP port = 50652.
+Sep 06 16:43:11.493 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 06 16:43:11.494 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips 
+Sep 06 16:43:11.500 GENERAL: working_dir=C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips
+Sep 06 16:43:11.500 HYPERVISOR: exec_cmd: nio_bridge create Hub1 
+Sep 06 16:43:11.526 HYPERVISOR: exec_cmd: nio create_udp udp-78cd5fb5-6749-45ce-ba83-d779d7ca8392 10001 127.0.0.1 10000 
+Sep 06 16:43:11.526 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-78cd5fb5-6749-45ce-ba83-d779d7ca8392 
+Sep 06 16:43:11.563 HYPERVISOR: exec_cmd: nio create_udp udp-645d40d4-0f42-4225-a7e8-854546ebe85c 10003 127.0.0.1 10002 
+Sep 06 16:43:11.563 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-645d40d4-0f42-4225-a7e8-854546ebe85c 
+Sep 06 16:43:11.594 HYPERVISOR: exec_cmd: nio create_udp udp-a9148b17-44eb-41d8-be8a-0a286926ac06 10005 127.0.0.1 10004 
+Sep 06 16:43:11.594 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-a9148b17-44eb-41d8-be8a-0a286926ac06 
+Sep 06 16:43:11.625 HYPERVISOR: exec_cmd: nio create_udp udp-f7631f6f-a418-4f25-916d-99d3236b870e 10007 127.0.0.1 10006 
+Sep 06 16:43:11.625 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-f7631f6f-a418-4f25-916d-99d3236b870e 
+Sep 06 16:45:07.862 HYPERVISOR: exec_cmd: nio create_udp udp-256678cf-d134-4be1-936c-3d4e5fda9230 10008 127.0.0.1 10009 
+Sep 06 16:45:07.862 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-256678cf-d134-4be1-936c-3d4e5fda9230 
+Sep 06 18:50:11.395 HYPERVISOR: Stopped.
+Sep 06 18:50:11.541 GENERAL: reset done.

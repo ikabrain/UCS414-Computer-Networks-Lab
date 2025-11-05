@@ -1,0 +1,10 @@
+Sep 06 16:43:22.303 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 06 16:43:22.304 HYPERVISOR: Started on TCP port = 50685.
+Sep 06 16:43:22.817 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 06 16:43:22.817 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips 
+Sep 06 16:43:22.817 GENERAL: working_dir=C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips
+Sep 06 16:43:22.817 HYPERVISOR: exec_cmd: nio_bridge create Hub2 
+Sep 06 16:44:02.302 HYPERVISOR: exec_cmd: nio_bridge delete Hub2 
+Sep 06 16:44:02.303 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 06 16:44:02.705 HYPERVISOR: Stopped.
+Sep 06 16:44:02.705 GENERAL: reset done.

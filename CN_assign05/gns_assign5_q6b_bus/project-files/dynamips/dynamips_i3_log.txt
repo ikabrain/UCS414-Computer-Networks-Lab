@@ -1,0 +1,24 @@
+Sep 06 16:44:45.293 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 06 16:44:45.293 HYPERVISOR: Started on TCP port = 50797.
+Sep 06 16:44:45.297 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 06 16:44:45.297 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips 
+Sep 06 16:44:45.297 GENERAL: working_dir=C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\dynamips
+Sep 06 16:44:45.298 HYPERVISOR: exec_cmd: nio_bridge create Hub2 
+Sep 06 16:45:07.893 HYPERVISOR: exec_cmd: nio create_udp udp-73a5fc57-2b77-4be6-8684-74e711b68911 10009 127.0.0.1 10008 
+Sep 06 16:45:07.894 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-73a5fc57-2b77-4be6-8684-74e711b68911 
+Sep 06 16:45:11.562 HYPERVISOR: exec_cmd: nio create_udp udp-621cc191-d21b-46b3-aa91-020b0a79e2aa 10011 127.0.0.1 10010 
+Sep 06 16:45:11.563 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-621cc191-d21b-46b3-aa91-020b0a79e2aa 
+Sep 06 16:45:18.465 HYPERVISOR: exec_cmd: nio create_udp udp-9b5144f0-eb8e-4c77-90d7-265490d220bd 10013 127.0.0.1 10012 
+Sep 06 16:45:18.465 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-9b5144f0-eb8e-4c77-90d7-265490d220bd 
+Sep 06 16:45:21.863 HYPERVISOR: exec_cmd: nio_bridge remove_nio Hub2 udp-9b5144f0-eb8e-4c77-90d7-265490d220bd 
+Sep 06 16:45:21.890 HYPERVISOR: exec_cmd: nio delete udp-9b5144f0-eb8e-4c77-90d7-265490d220bd 
+Sep 06 16:45:27.822 HYPERVISOR: exec_cmd: nio create_udp udp-ebf8af09-0855-4c2c-805d-0cd38a6a609f 10013 127.0.0.1 10012 
+Sep 06 16:45:27.823 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-ebf8af09-0855-4c2c-805d-0cd38a6a609f 
+Sep 06 16:45:33.906 HYPERVISOR: exec_cmd: nio create_udp udp-53865a6e-b487-4a4c-af48-2e2c089b93ce 10015 127.0.0.1 10014 
+Sep 06 16:45:33.906 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-53865a6e-b487-4a4c-af48-2e2c089b93ce 
+Sep 06 16:45:36.909 HYPERVISOR: exec_cmd: nio create_udp udp-7584f769-c1cc-43a1-8e9a-cb0a22ce3f22 10017 127.0.0.1 10016 
+Sep 06 16:45:36.910 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-7584f769-c1cc-43a1-8e9a-cb0a22ce3f22 
+Sep 06 16:48:43.686 HYPERVISOR: exec_cmd: nio bind_filter udp-621cc191-d21b-46b3-aa91-020b0a79e2aa 2 capture 
+Sep 06 16:48:43.687 HYPERVISOR: exec_cmd: nio setup_filter udp-621cc191-d21b-46b3-aa91-020b0a79e2aa 2 en10mb C:\Users\Ikansh\GNS3\projects\Assign5_Q6b_Bus\project-files\captures\PC5_Ethernet0_to_Hub2_Ethernet1.pcap 
+Sep 06 18:50:11.395 HYPERVISOR: Stopped.
+Sep 06 18:50:11.541 GENERAL: reset done.

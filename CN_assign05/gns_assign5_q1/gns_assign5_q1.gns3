@@ -1,0 +1,331 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "Assignment 5 Q1 - Demonstrate ARP Protocol using Wireshark",
+    "project_id": "562dce3f-e9a1-4c1f-803d-6342fa29830d",
+    "revision": 9,
+    "scene_height": 900,
+    "scene_width": 1500,
+    "show_grid": true,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": true,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "ff8f92ff-bb35-4af1-9045-4f4d7d503fa1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"130\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">192.168.1.1</text></svg>",
+                "x": -515,
+                "y": -341,
+                "z": 2
+            },
+            {
+                "drawing_id": "e21e7f70-0794-412c-8ab2-e8144acfb56e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"130\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">192.168.1.2</text></svg>",
+                "x": 385,
+                "y": -341,
+                "z": 2
+            },
+            {
+                "drawing_id": "298f2a85-552d-427a-af8b-d535854a96a4",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"576\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">1. Initialise PCs with `ip 192.168.1.x/24`, save &amp; stop all nodes</text></svg>",
+                "x": -263,
+                "y": -291,
+                "z": 2
+            },
+            {
+                "drawing_id": "f1360e43-70ec-49ed-91ed-5550d9c1e43e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1087\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">2. Start WireShark Capture on link between PC1 and switch by right-clicking and selecting `Start capture`</text></svg>",
+                "x": -518,
+                "y": -216,
+                "z": 2
+            },
+            {
+                "drawing_id": "962bfa1b-6b04-4daa-998b-07f2ec04eebf",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">3. Start all nodes</text></svg>",
+                "x": -80,
+                "y": -141,
+                "z": 2
+            },
+            {
+                "drawing_id": "f1dcd75b-1d14-470b-85a1-f71f299af1dd",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1509\" height=\"30\"><text font-family=\"MS Shell Dlg 2\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Gratuitous ARP in Frames 3-8: VPCS are announcing their own IP-to-MAC mapping (not asking for anyone else) to update others\u2019 ARP tables OR check for IP conflicts!</text></svg>",
+                "x": -754,
+                "y": -115,
+                "z": 2
+            },
+            {
+                "drawing_id": "eb3b43a0-fc08-4f8b-bd4a-3cc78eedbdad",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"213\" height=\"80\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">4. Ping PC2 from PC1\n\nPC1&gt; ping 192.168.1.2</text></svg>",
+                "x": -106,
+                "y": -40,
+                "z": 2
+            },
+            {
+                "drawing_id": "a6436918-92ed-4dfb-8753-7bf26ed4a15f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"892\" height=\"128\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Initial ARP Request (BROADCASTED to all PCs, with dest MAC being FF:FF:FF:FF:FF:FF):\n\u201cWho has 192.168.1.2? Tell 192.168.1.1\u201d\n\nARP Reply (UNICASTED only from receiver to sender's MAC):\n\u201c192.168.1.2 is at [MAC address of PC2]\u201d</text></svg>",
+                "x": -396,
+                "y": 61,
+                "z": 2
+            },
+            {
+                "drawing_id": "b292a3d8-0749-40d1-8ac2-17cc0a84f2ee",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"505\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">Subsequent packets are ICMP Echo/Reply (normal ping)</text></svg>",
+                "x": -252,
+                "y": 209,
+                "z": 2
+            },
+            {
+                "drawing_id": "5d3fe664-f1a1-474e-8b1a-2de1da1893a1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1234\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">Wireshark shows that before any IP communication, ARP resolves the destination IP to a MAC address \u2014 allowing Ethernet-level delivery.</text></svg>",
+                "x": -667,
+                "y": 309,
+                "z": 2
+            },
+            {
+                "drawing_id": "904695ef-8ff2-4735-979d-bd24993d4f29",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1240\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">5. Close WireShark window without saving, stop WireShark Capture by right-clicking and selecting `Stop capture`, stop all nodes, and exit</text></svg>",
+                "x": -670,
+                "y": 384,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "da4c4175-9f34-416c-9e21-d8a869702f64",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 72,
+                            "y": 29
+                        },
+                        "node_id": "22690fa9-320d-43c9-8a5f-61ef9169fc89",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -4,
+                            "y": 16
+                        },
+                        "node_id": "9e0d8a32-247f-44a0-b0dd-83a37e4657c4",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "eaae7c52-2bbf-48ae-a9ee-286b10427cf5",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": 75,
+                            "y": 16
+                        },
+                        "node_id": "9e0d8a32-247f-44a0-b0dd-83a37e4657c4",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -7,
+                            "y": 29
+                        },
+                        "node_id": "79ad9d52-1375-4e01-9ff7-9d0b9ac6e2fb",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": 5000,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "22690fa9-320d-43c9-8a5f-61ef9169fc89",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": -482,
+                "y": -404,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5002,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC2",
+                    "x": 9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC2",
+                "node_id": "79ad9d52-1375-4e01-9ff7-9d0b9ac6e2fb",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 417,
+                "y": -404,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5004,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Switch1",
+                    "x": -9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Switch1",
+                "node_id": "9e0d8a32-247f-44a0-b0dd-83a37e4657c4",
+                "node_type": "ethernet_switch",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "ports_mapping": [
+                        {
+                            "name": "Ethernet0",
+                            "port_number": 0,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet1",
+                            "port_number": 1,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet2",
+                            "port_number": 2,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet3",
+                            "port_number": 3,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet4",
+                            "port_number": 4,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet5",
+                            "port_number": 5,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet6",
+                            "port_number": 6,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet7",
+                            "port_number": 7,
+                            "type": "access",
+                            "vlan": 1
+                        }
+                    ]
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+                "width": 72,
+                "x": -35,
+                "y": -391,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": [],
+    "version": "2.2.54",
+    "zoom": 100
+}

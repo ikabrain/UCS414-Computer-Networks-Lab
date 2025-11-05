@@ -1,0 +1,205 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "Assign5_Q3",
+    "project_id": "332d7d56-dab4-47f1-85cf-52348d3ba54e",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": true,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": true,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "b7365190-8bd6-42da-81ff-6c82d37c1e89",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"608\" height=\"29\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Download c7200 &gt; Edit &gt; Preferences &gt; IOS Router &gt; New... &gt; c7200</text></svg>",
+                "x": -104,
+                "y": -464,
+                "z": 2
+            },
+            {
+                "drawing_id": "33c8e674-125a-4cbd-8d24-2f49f0c35027",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"346\" height=\"239\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">START PC &gt; Console\n\nip &lt;ip&gt; &lt;subnet&gt; &lt;gateway&gt;\nHere, \nPC1&gt; ip 10.128.20.1/16 10.128.20.254\n\n(OPTIONAL: Set DNS Server\nPC1&gt; ip dns 10.128.20.254)\n\nVerify TCP/IP with\nPC1&gt; show ip</text></svg>",
+                "x": 352,
+                "y": -294,
+                "z": 2
+            },
+            {
+                "drawing_id": "24626c00-b7f7-4201-9371-3a678b8e76b7",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"373\" height=\"575\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">START ROUTER &gt; Console\n\nConnect FastEthernet0/0 with PC1\n\n\nYou are at the USER EXEC level\nTo enter PRIVILEDGED EXEC level,\nR1#enable\n\nGo into config mode\nR1#config t\n\nGo to interface of port FastEthernet0/0\nR1(config)#int f0/0\n\nAnd now, set ip\nR1(config-if)#ip address &lt;ip&gt; &lt;/subnet&gt;\n\nPrevent Router from shutting down with\nR1(config-if)#no shut\n\nNow, exit from if &amp; config\nR1(config-if)#exit\nR1(config)#exit\n\nConfirm with\nR1#show ip interface brief</text></svg>",
+                "x": -211,
+                "y": -287,
+                "z": 2
+            },
+            {
+                "drawing_id": "b189e317-1135-426f-9737-352cbfafbfc5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"444\" height=\"29\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">When all is done, ping router from PC &amp; vice-versa!</text></svg>",
+                "x": 28,
+                "y": 335,
+                "z": 2
+            },
+            {
+                "drawing_id": "10ff5648-4d68-42c0-9813-c45f2361459d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"676\" height=\"29\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">(To send a custom number of packets, use REPEAT &lt;num_of_ICPM_echoes&gt;)</text></svg>",
+                "x": -88,
+                "y": 360,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "7ad0fc0b-7497-4b59-a420-5a9d3e08594c",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 22
+                        },
+                        "node_id": "464bff2e-c6c9-44b6-b7bd-c40afab1f748",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -7,
+                            "y": 29
+                        },
+                        "node_id": "ffc7a82d-d85b-4bb4-a3f1-25d0e733ef9b",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": 5003,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 12,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "ffc7a82d-d85b-4bb4-a3f1-25d0e733ef9b",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 415,
+                "y": -346,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5005,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 17,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "R1",
+                "node_id": "464bff2e-c6c9-44b6-b7bd-c40afab1f748",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 4,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60189214",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.M7.image",
+                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "mac_addr": "ca01.6afc.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": null,
+                    "slot3": null,
+                    "slot4": null,
+                    "slot5": null,
+                    "slot6": null,
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": ""
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "62c655d8-42d8-4833-b653-0f286aabe83b",
+                "width": 66,
+                "x": -110,
+                "y": -339,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": [],
+    "version": "2.2.54",
+    "zoom": 100
+}
