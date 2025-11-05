@@ -1,0 +1,20 @@
+<svg width="1037" height="428"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">PRIVILEGED-EXEC COMMANDS:-
+Router# show ip interface		=&gt; Learn about the status of the interfaces of this router
+Router# show run			=&gt; View the configuration of the router
+Router# show running-config	=&gt; View the Running Configuration.
+(There are two different configurations stored on the router; the Running Configuration and the Start‐Up Configuration.
+The Running Configuration is your current, working configuration. It is stored in the RAM memory of the router.)
+Router# show startup-config 	=&gt; View the Start‐Up configuration. 
+It is the configuration that is loaded when the router initializes
+Router# show version 		=&gt; Find the version and system information about your router
+Router# show memory		=&gt; Find memory information about the router
+
+CONFIGURATION MODE in PRIVILEGE EXEC:-
+Router# configure terminal
+OR
+Router# config t
+
+Router(config)# hostname r1	=&gt; Change the router name from “Router” to “r1”.
+The command prompt will look now r1(config)#
+
+Router(config)# &lt;CTRL&gt;+Z 	=&gt; Switch from configuration to privileged mode input</text></svg>

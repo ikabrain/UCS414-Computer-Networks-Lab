@@ -1,0 +1,19 @@
+<svg width="1077" height="407"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">In the Privileged EXEC level use the show command to
+see detailed information about the network interfaces of the router.
+Router # show interfaces [Enter]
+Now enter the Configuration level to assign an IP address to the router.
+Router# configure terminal OR config t
+Use an IP address (eg. 10.128.20.254) and subnet mask 255.255.0.0 for the
+values. Then do the following:
+Router(config) # interface fa 0/0 OR int f0/0
+This will ensure that you are configuring the 0/0 interface since there could be
+multiple interfaces with names 0/0, 0/1 …etc.
+Router(config‐if ) # ip address (given ip address) (given subnet mask) [Enter]
+e.g. ip address 10.128.20.254 255.255.0.0
+Router(config‐if ) #no shutdown OR no shut
+This will ensure that the ip address configuration is administratively up. i.e. The ip address is being used for routing purpose.
+Now, exit from if &amp; config
+R1(config-if)#exit
+R1(config)#exit
+Confirm with
+R1#show ip interface brief</text></svg>

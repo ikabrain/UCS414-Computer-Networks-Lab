@@ -1,0 +1,28 @@
+<svg width="975" height="792"><text font-family="MS Shell Dlg 2" font-size="14.0" font-weight="bold" fill="#000000" fill-opacity="1.0">Setting Router Passwords
+So far we have been working on a router with no access restrictions enabled. In
+the real world, this is not the case. The most basic form of access restriction
+would be by the use of passwords. Passwords can be set for console access,
+telnet access and privileged EXEC access. Below are the various password
+commands on a Cisco router. The commands have to be typed out in privileged
+EXEC mode.
+
+Set a console password
+Router(config)#line con 0
+Router(config-line)#login
+Router(config-line)#password cisco
+
+Set a telnet password. This command is also used to enable telnet access for up
+to 5 simultaneous logins
+Router(config)#line vty 0 4
+Router(config-line)#login
+Router(config-line)#password cisco
+
+Stop console timing out in cases of inactivity Router(config)#line con 0
+Router(config-line)#exec-timeout 0 0
+
+Set the enable password to cisco
+Router(config)#enable password cisco
+
+Set the enable secret password to peter.
+This password overrides the enable password and is encypted within the config file
+Router(config)#enable secret peter</text></svg>
