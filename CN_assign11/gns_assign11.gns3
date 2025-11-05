@@ -7,16 +7,242 @@
     "name": "Assignment 11 - Implement topology with RIP in GNS3",
     "project_id": "b42e2656-2e4c-4c8d-b259-1c05de236fbb",
     "revision": 9,
-    "scene_height": 1000,
+    "scene_height": 2000,
     "scene_width": 2000,
     "show_grid": true,
     "show_interface_labels": false,
     "show_layers": false,
-    "snap_to_grid": true,
+    "snap_to_grid": false,
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "5bd48439-a8d3-4b23-903a-342d7239409b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"122\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" text-decoration=\"underline\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.12.0/24</text></svg>",
+                "x": -486,
+                "y": -16,
+                "z": 2
+            },
+            {
+                "drawing_id": "3dfe0d65-a292-49ad-b325-eeb08eeb0f5f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"111\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.1.1/24</text></svg>",
+                "x": -668,
+                "y": 237,
+                "z": 2
+            },
+            {
+                "drawing_id": "abe4fa15-e20d-4ba1-9c33-229795dfa206",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"111\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.2.1/24</text></svg>",
+                "x": -630,
+                "y": -266,
+                "z": 2
+            },
+            {
+                "drawing_id": "a7695112-ac0c-4e5e-9302-4322dba8a5ef",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"111\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.3.1/24</text></svg>",
+                "x": 369,
+                "y": -266,
+                "z": 2
+            },
+            {
+                "drawing_id": "60eba0a4-dbfd-4d03-a35f-776de949ae01",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"111\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.4.1/24</text></svg>",
+                "x": 369,
+                "y": 259,
+                "z": 2
+            },
+            {
+                "drawing_id": "151cda31-9e54-4ff5-9b4f-078d7838fc4b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"243\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Main network: 10.0.0.0</text></svg>",
+                "x": -196,
+                "y": -16,
+                "z": 2
+            },
+            {
+                "drawing_id": "ba4d7ac3-d43c-4af4-9ef3-92f9e0312da7",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"122\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" text-decoration=\"underline\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.14.0/24</text></svg>",
+                "x": -136,
+                "y": 259,
+                "z": 2
+            },
+            {
+                "drawing_id": "e928e472-c937-4bcc-acf4-7430264de1f7",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"122\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" text-decoration=\"underline\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.34.0/24</text></svg>",
+                "x": 364,
+                "y": 9,
+                "z": 2
+            },
+            {
+                "drawing_id": "5ab15075-0313-450f-8c27-cbacfce07659",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"122\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" text-decoration=\"underline\" fill=\"#000000\" fill-opacity=\"1.0\">10.1.23.0/24</text></svg>",
+                "x": -136,
+                "y": -192,
+                "z": 2
+            },
+            {
+                "drawing_id": "e9c2581f-0896-40ab-aa94-4b0651c46893",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"282\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Configuration for Router 0:</text></svg>",
+                "x": -779,
+                "y": 284,
+                "z": 2
+            },
+            {
+                "drawing_id": "6df93c37-9f55-4349-b88a-589849f26fbb",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"448\" height=\"392\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R0&gt;en\nR0#conf t\nR0(config)#int lo0 //loopback interface\nR0(config-if)#ip add 10.1.1.1 255.255.255.0\nR0(config-if)#no shut\n\nR0(config-if)#int s0/0\nR0(config-if)#ip address 10.1.12.1 255.255.255.0\nR0(config-if)#no shut\n\nR0(config-if)#int s0/1\nR0(config-if)#ip address 10.1.14.1 255.255.255.0\nR0(config-if)#no shut\n\nR0(config-if)#end\nR0#wr</text></svg>",
+                "x": -779,
+                "y": 306,
+                "z": 2
+            },
+            {
+                "drawing_id": "98c0f4a9-4c59-4952-88ac-81c67b0d59ab",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"383\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">RIP Configuration Commands for R0:</text></svg>",
+                "x": -776,
+                "y": 728,
+                "z": 2
+            },
+            {
+                "drawing_id": "63e2d796-aa5f-4316-85c9-11c99f8828a2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"284\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R0&gt;en\nR0#conf t\nR0(config)#router rip\nR0(config-router)#net 10.0.0.0\nR0(config-router)#\nR0(config-router)#end\nR0#show ip route</text></svg>",
+                "x": -774,
+                "y": 757,
+                "z": 2
+            },
+            {
+                "drawing_id": "e0b1b1fc-0449-4e37-a1a1-42ad3bce0208",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"448\" height=\"392\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R1&gt;en\nR1#conf t\nR1(config)#int lo0 //loopback interface\nR1(config-if)#ip add 10.1.2.1 255.255.255.0\nR1(config-if)#no shut\n\nR1(config-if)#int s0/0\nR1(config-if)#ip address 10.1.12.2 255.255.255.0\nR1(config-if)#no shut\n\nR1(config-if)#int s0/1\nR1(config-if)#ip address 10.1.23.1 255.255.255.0\nR1(config-if)#no shut\n\nR1(config-if)#end\nR1#wr</text></svg>",
+                "x": -962,
+                "y": -950,
+                "z": 2
+            },
+            {
+                "drawing_id": "35822142-278b-45a4-9f6f-26b67643625e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"222\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Configuration for R1:</text></svg>",
+                "x": -964,
+                "y": -977,
+                "z": 2
+            },
+            {
+                "drawing_id": "716eaf81-0030-4aac-8fa4-4b09678b4dac",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"383\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">RIP Configuration Commands for R1:</text></svg>",
+                "x": -964,
+                "y": -532,
+                "z": 2
+            },
+            {
+                "drawing_id": "66906a5d-6c6b-4cad-a94d-90dd2d14adb3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"284\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R1&gt;en\nR1#conf t\nR1(config)#router rip\nR1(config-router)#net 10.0.0.0\nR1(config-router)#\nR1(config-router)#end\nR1#show ip route</text></svg>",
+                "x": -962,
+                "y": -506,
+                "z": 2
+            },
+            {
+                "drawing_id": "84c500d2-ca5e-470a-8fc9-c4443b3599be",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"222\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Configuration for R2:</text></svg>",
+                "x": 409,
+                "y": -923,
+                "z": 2
+            },
+            {
+                "drawing_id": "778529e2-1253-427f-bc3d-75239e0178fa",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"448\" height=\"392\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R2&gt;en\nR2#conf t\nR2(config)#int lo0 //loopback interface\nR2(config-if)#ip add 10.1.3.1 255.255.255.0\nR2(config-if)#no shut\n\nR2(config-if)#int s0/1\nR2(config-if)#ip address 10.1.23.2 255.255.255.0\nR2(config-if)#no shut\n\nR2(config-if)#int s0/0\nR2(config-if)#ip address 10.1.34.1 255.255.255.0\nR2(config-if)#no shut\n\nR2(config-if)#end\nR2#wr</text></svg>",
+                "x": 415,
+                "y": -899,
+                "z": 2
+            },
+            {
+                "drawing_id": "4049fa5c-9bea-4b73-bf1f-3ba8ff498db5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"383\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">RIP Configuration Commands for R2:</text></svg>",
+                "x": 415,
+                "y": -499,
+                "z": 2
+            },
+            {
+                "drawing_id": "76ea4d07-4ad2-4085-88a5-ec50a5f779c3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"284\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R2&gt;en\nR2#conf t\nR2(config)#router rip\nR2(config-router)#net 10.0.0.0\nR2(config-router)#\nR2(config-router)#end\nR2#show ip route</text></svg>",
+                "x": 420,
+                "y": -475,
+                "z": 2
+            },
+            {
+                "drawing_id": "c1e21cbe-e879-41aa-bd31-bd7f45935566",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"222\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Configuration for R3:</text></svg>",
+                "x": 370,
+                "y": 290,
+                "z": 2
+            },
+            {
+                "drawing_id": "b22085b4-3fd7-4ae2-a4d4-3fc11cd954fd",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"448\" height=\"392\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R3&gt;en\nR3#conf t\nR3(config)#int lo0 //loopback interface\nR3(config)#ip add 10.1.4.1 255.255.255.0\nR3(config)#no shut\n\nR3(config-if)#int s0/0\nR3(config-if)#ip add 10.1.34.2 255.255.255.0\nR3(config-if)#no shut\n\nR3(config-if)#int s0/1\nR3(config-if)#ip address 10.1.14.2 255.255.255.0\nR3(config-if)#no shut\n\nR3(config-if)#end\nR3#wr</text></svg>",
+                "x": 374,
+                "y": 313,
+                "z": 2
+            },
+            {
+                "drawing_id": "98121c89-0444-40cc-b38c-8fb382b6519c",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"383\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">RIP Configuration Commands for R3:</text></svg>",
+                "x": 369,
+                "y": 724,
+                "z": 2
+            },
+            {
+                "drawing_id": "bf6cf72b-6339-4c0c-8300-fc9083448722",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"284\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R2&gt;en\nR2#conf t\nR2(config)#router rip\nR2(config-router)#net 10.0.0.0\nR2(config-router)#\nR2(config-router)#end\nR2#show ip route</text></svg>",
+                "x": 369,
+                "y": 746,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

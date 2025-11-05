@@ -25,7 +25,7 @@ For setting up GNS3 and its dependencies, refer to the following guide:
  - [x] [Assignment 5 - Simple Network Topologies in GNS3](./CN_assign05)
  - [x] [Assignment 6 - Configuring a Router in GNS3](./CN_assign06)
  - [x] [Assignment 7 - Routing using RIP v2 in GNS3](./CN_assign07)
- - [ ] [Assignment 11 - Implement topology with RIP in GNS3](./CN_assign11)
+ - [x] [Assignment 11 - Implement topology with RIP in GNS3](./CN_assign11)
 
 ---
 
