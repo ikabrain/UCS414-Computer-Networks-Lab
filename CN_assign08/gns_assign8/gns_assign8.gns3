@@ -1,0 +1,576 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "Assignment 8 - Create pool on DHCP Server router",
+    "project_id": "112fe9a5-3fbb-43c9-bf20-3b06f1654f04",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": true,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "9a9f7e5e-c172-4d96-9878-825c19a5ae5a",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1571\" height=\"100\"><rect width=\"1571\" height=\"100\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
+                "x": -787,
+                "y": -473,
+                "z": 1
+            },
+            {
+                "drawing_id": "27c1854a-11af-47a1-9ccc-977d8e0292c9",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"1565\" height=\"104\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">DHCP (DYNAMIC HOST CONFIG PROTOCOL) automatically assigns IP addresses and network settings (like DNS and gateway) to devices joining a network\n - IP pool = List of available, unassigned IPs\n - Runs at Layer 7 (Application layer) of the OSI model, but it heavily interacts with Layer 3 (IP) and Layer 2 (MAC)\n - Routers can act as DHCP servers</text></svg>",
+                "x": -782,
+                "y": -477,
+                "z": 2
+            },
+            {
+                "drawing_id": "760c6430-a7a9-4488-9809-fa92dad569b5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"684\" height=\"128\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#00aa00\" fill-opacity=\"1.0\">DHCP \u201cDORA\u201d Process\n1. Discover - Client broadcasts \u201cWho can give me an IP?\"\n2. Offer - DHCP server replies with an IP offer\n3. Request - Client requests to use the offered IP\n4. Acknowledge - Server confirms assignment; client configures IP</text></svg>",
+                "x": -668,
+                "y": -340,
+                "z": 2
+            },
+            {
+                "drawing_id": "23a73679-e945-4174-b8d6-c99b7b803a0d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"698\" height=\"148\"><rect width=\"698\" height=\"148\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
+                "x": -680,
+                "y": -346,
+                "z": 1
+            },
+            {
+                "drawing_id": "361094e8-22f1-4e97-9e50-1bb73a3494f1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"116\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">DHCP Server</text></svg>",
+                "x": -433,
+                "y": 35,
+                "z": 2
+            },
+            {
+                "drawing_id": "25a349dd-2acf-40ae-8f88-c8e79f349d32",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"47\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">f0/0</text></svg>",
+                "x": -348,
+                "y": 10,
+                "z": 2
+            },
+            {
+                "drawing_id": "0cc15fd2-3c3f-4799-8354-f496706115c9",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"29\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">e0</text></svg>",
+                "x": 10,
+                "y": 10,
+                "z": 2
+            },
+            {
+                "drawing_id": "07423166-1127-46fd-9041-eee52ec04555",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"29\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">e1</text></svg>",
+                "x": 110,
+                "y": -64,
+                "z": 2
+            },
+            {
+                "drawing_id": "03405eda-68b6-4cde-9a4d-35fff4dfeaa5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"29\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">e2</text></svg>",
+                "x": 110,
+                "y": 35,
+                "z": 2
+            },
+            {
+                "drawing_id": "30176bb6-e039-465f-9251-94a33567ce79",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"29\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">e0</text></svg>",
+                "x": 385,
+                "y": -164,
+                "z": 2
+            },
+            {
+                "drawing_id": "0a48761a-751b-4627-ad5c-d63a37bc6c24",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"29\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">e0</text></svg>",
+                "x": 385,
+                "y": 135,
+                "z": 2
+            },
+            {
+                "drawing_id": "898b164c-091d-4c28-84fb-a625ed4f39fb",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"73\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Client 1</text></svg>",
+                "x": 413,
+                "y": -114,
+                "z": 2
+            },
+            {
+                "drawing_id": "3fac7008-52ce-4808-86be-d159ff516a8e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"73\" height=\"29\"><text font-family=\"MS Shell Dlg 2\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Client 2</text></svg>",
+                "x": 413,
+                "y": 185,
+                "z": 2
+            },
+            {
+                "drawing_id": "e77978b8-d91e-44ec-bdad-7c475cae015e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"281\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">DHCP Server Configuration</text></svg>",
+                "x": -615,
+                "y": 79,
+                "z": 2
+            },
+            {
+                "drawing_id": "5e2c6eb3-e34a-4419-bea9-0d55dc7a9e70",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"395\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R1#config t\n\nR1(config)#ip dhcp pool xyz\nR1(dhcp-config)#network 192.168.10.0 /24\nR1(dhcp-config)#dns-server 1.2.3.4\nR1(dhcp-config)#lease 0 3\nR1(dhcp-config)#no ip bootp server</text></svg>",
+                "x": -597,
+                "y": 101,
+                "z": 2
+            },
+            {
+                "drawing_id": "cb2482b0-c0d8-4958-9b80-ac0c7e92a0ac",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"445\" height=\"176\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">R1(config)#int fa0/0\nR1(config-if)#ip add 192.168.10.1 255.255.255.0\nR1(config-if)#no shut\n\nR1(config-if)#ex\nR1(config)#ex\nR1#sh ip int b</text></svg>",
+                "x": -597,
+                "y": 311,
+                "z": 2
+            },
+            {
+                "drawing_id": "d83f2d24-1864-4e50-9fd3-8f5f94abc904",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"208\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">R1 Interface set-up</text></svg>",
+                "x": -615,
+                "y": 284,
+                "z": 2
+            },
+            {
+                "drawing_id": "76a498f9-91d8-4df8-a094-f6c7dc75b2ce",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"56\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#000000\" fill-opacity=\"1.0\">PC&gt; ip dhcp\nPC&gt; show ip</text></svg>",
+                "x": 465,
+                "y": 297,
+                "z": 2
+            },
+            {
+                "drawing_id": "d405c5ed-916c-4d4c-9c1e-73580dd89bf9",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"163\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">For each client,</text></svg>",
+                "x": 443,
+                "y": 259,
+                "z": 2
+            },
+            {
+                "drawing_id": "b6f2a09c-e665-444d-9480-c62b8f71a6ee",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"98\" height=\"29\"><line x1=\"0\" x2=\"98\" y1=\"0\" y2=\"-29\" stroke-width=\"4\" stroke=\"#ff0000\" /></svg>",
+                "x": -200,
+                "y": 175,
+                "z": 1
+            },
+            {
+                "drawing_id": "d4b3cc40-6807-4c3e-8086-3affcd84b828",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"454\" height=\"80\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#ff0000\" fill-opacity=\"1.0\">Means pool named xyz \ncontains IPs from 192.168.10.1 to 192.168.10.254\navailable to be assigned to clients!</text></svg>",
+                "x": -102,
+                "y": 110,
+                "z": 2
+            },
+            {
+                "drawing_id": "17097e34-c8aa-4e17-a9f9-df635cae17a3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"0\"><line x1=\"0\" x2=\"200\" y1=\"0\" y2=\"0\" stroke-width=\"4\" stroke=\"#ff5500\" /></svg>",
+                "x": -347,
+                "y": 237,
+                "z": 1
+            },
+            {
+                "drawing_id": "81a16c25-79fe-4d58-9286-feacd6b55043",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"366\" height=\"56\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#ff5500\" fill-opacity=\"1.0\">Clients must renew their IPs periodically\nafter every 3 HOURS!!!</text></svg>",
+                "x": -142,
+                "y": 222,
+                "z": 2
+            },
+            {
+                "drawing_id": "26ba7a48-4b1f-4bf6-9eb9-0c8720a09998",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"174\" height=\"60\"><line x1=\"0\" x2=\"174\" y1=\"0\" y2=\"60\" stroke-width=\"4\" stroke=\"#005500\" /></svg>",
+                "x": -273,
+                "y": 266,
+                "z": 1
+            },
+            {
+                "drawing_id": "723f3f98-e7f4-4f1b-be6a-8723b8f29ac7",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"587\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#005500\" fill-opacity=\"1.0\">BACKWORD COMPATIBILITY - disables outdated BOOTP protocol</text></svg>",
+                "x": -155,
+                "y": 325,
+                "z": 2
+            },
+            {
+                "drawing_id": "2b960741-83a4-4358-ba6d-af0ebf1de61c",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"390\" height=\"32\"><text font-family=\"MS Shell Dlg 2\" font-size=\"12.0\" fill=\"#ff0000\" fill-opacity=\"1.0\">Requests IP from router (SEE WIRESHARK)</text></svg>",
+                "x": 575,
+                "y": 359,
+                "z": 2
+            },
+            {
+                "drawing_id": "d3fb0802-26e1-4db5-81dc-1de6b4221d39",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"161\" height=\"54\"><line x1=\"0\" x2=\"161\" y1=\"0\" y2=\"54\" stroke-width=\"4\" stroke=\"#ff0000\" /></svg>",
+                "x": 586,
+                "y": 312,
+                "z": 1
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "1ac82972-5634-4612-80fb-6d3182005927",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 73,
+                            "y": 22
+                        },
+                        "node_id": "3ca81b74-8965-4f71-90b5-35a5096e4e03",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -4,
+                            "y": 16
+                        },
+                        "node_id": "0f2da02a-879a-491a-a064-db928ac28295",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "991a8b15-dbb7-4d7f-a1bd-9cdef5247e0d",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": 72,
+                            "y": 1
+                        },
+                        "node_id": "0f2da02a-879a-491a-a064-db928ac28295",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -4,
+                            "y": 44
+                        },
+                        "node_id": "99c41fe6-b4d0-44cb-abd1-60c61f90847b",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "dcfe4f1d-e206-4f58-8b6c-764ca25e03ea",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e2",
+                            "x": 72,
+                            "y": 30
+                        },
+                        "node_id": "0f2da02a-879a-491a-a064-db928ac28295",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -4,
+                            "y": 14
+                        },
+                        "node_id": "367c56f2-93ba-4162-97f9-64aa56531177",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": 5000,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 15,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "R1",
+                "node_id": "3ca81b74-8965-4f71-90b5-35a5096e4e03",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 4,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.M7.image",
+                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "mac_addr": "ca01.1f94.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-4T+",
+                    "slot3": null,
+                    "slot4": null,
+                    "slot5": null,
+                    "slot6": null,
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": ""
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "cb53c6e5-39e7-4ad8-9747-8487c6784737",
+                "width": 66,
+                "x": -408,
+                "y": -22,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5001,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Switch1",
+                    "x": -9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Switch1",
+                "node_id": "0f2da02a-879a-491a-a064-db928ac28295",
+                "node_type": "ethernet_switch",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "ports_mapping": [
+                        {
+                            "name": "Ethernet0",
+                            "port_number": 0,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet1",
+                            "port_number": 1,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet2",
+                            "port_number": 2,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet3",
+                            "port_number": 3,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet4",
+                            "port_number": 4,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet5",
+                            "port_number": 5,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet6",
+                            "port_number": 6,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet7",
+                            "port_number": 7,
+                            "type": "access",
+                            "vlan": 1
+                        }
+                    ]
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+                "width": 72,
+                "x": 39,
+                "y": -16,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5002,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "99c41fe6-b4d0-44cb-abd1-60c61f90847b",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 417,
+                "y": -179,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5004,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: MS Shell Dlg 2;font-size: 12.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC2",
+                    "x": 9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC2",
+                "node_id": "367c56f2-93ba-4162-97f9-64aa56531177",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 417,
+                "y": 120,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": [],
+    "version": "2.2.54",
+    "zoom": 100
+}
