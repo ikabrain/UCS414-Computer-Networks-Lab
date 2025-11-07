@@ -28,7 +28,7 @@ For setting up GNS3 and its dependencies, refer to the following guide:
 - [x] [Assignment 6 - Configuring a Router in GNS3](./CN_assign06)
 - [x] [Assignment 7 - Routing using RIP v2 in GNS3](./CN_assign07)
 - [x] [Assignment 11 - Implement topology with RIP in GNS3](./CN_assign11)
-- [ ] [Assignment 8 - Create pool on DHCP Server router](./CN_assign08)
+- [x] [Assignment 8 - Create pool on DHCP Server router](./CN_assign08)
 
 ---
 
