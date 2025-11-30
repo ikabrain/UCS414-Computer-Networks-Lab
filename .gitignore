@@ -4,4 +4,3 @@
 *.iso
 project-files/qemu/*
 project-files/docker/*
-__pycache__/
